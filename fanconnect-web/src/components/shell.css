@@ -1,0 +1,101 @@
+.shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f6f8;
+  color: #0f172a;
+}
+
+.shell__header {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.18);
+}
+
+.shell__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shell__logo-mark {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.shell__eyebrow {
+  margin: 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.shell__header h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.shell__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 20px;
+}
+
+.shell__body {
+  flex: 1;
+  padding: 18px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto 70px;
+}
+
+.shell__tabs {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  box-shadow: 0 -6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.tab {
+  border: none;
+  background: none;
+  padding: 10px 6px 8px;
+  display: grid;
+  gap: 4px;
+  place-items: center;
+  color: #475569;
+  font-weight: 600;
+}
+
+.tab__icon {
+  font-size: 18px;
+}
+
+.tab--active {
+  color: #2563eb;
+}
+
+.tab--active .tab__icon {
+  transform: scale(1.05);
+}
+
